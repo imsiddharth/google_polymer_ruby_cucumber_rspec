@@ -1,6 +1,7 @@
 module CreateDriver
   def page_driver
     @driver = Selenium::WebDriver.for :firefox
+    @driver.manage.window.maximize
   end
 
   def driver
